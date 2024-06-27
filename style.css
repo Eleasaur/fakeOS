@@ -59,6 +59,7 @@ body {
   background: linear-gradient(0deg, #1085e1, #1189e7, #1085e1);
 }
 .windows_menu_time p {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
