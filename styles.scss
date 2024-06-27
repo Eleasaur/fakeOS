@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+}
+.windows {
+  &_desktop {
+    height: calc(95vh - 3px);
+    background-image: url(./images/windows-xp-bliss-bg.jpg);
+  }
+  &_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    background: linear-gradient(0deg, #3375ce, #255fdc, #2460dc);
+    border-top: 3px solid #397edf;
+    height: 5vh;
+    &_start {
+      margin: 0;
+      height: calc(100% - 3px);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: 3px solid #6bb36b;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 15px;
+      column-gap: 0.5em;
+      padding-left: 1em;
+      padding-right: 2em;
+      background: linear-gradient(0deg, #6bb36b, #4f9d45, #57b14d);
+      &_icon {
+        margin: 0;
+        height: 3.5vh;
+      }
+      &_text {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-size: 1.75em;
+        color: white;
+      }
+    }
+    &_open-app {
+      height: 100%;
+      width: auto;
+    }
+    &_time {
+      display: flex;
+      align-items: center;
+      padding-right: 1.5em;
+      padding-left: 3em;
+      margin: 0;
+      height: calc(100% - 6px);
+      color: white;
+      border-top: 3px solid #2ea0f7;
+      border-bottom: 3px solid #2ea0f7;
+      border-left: 2px solid #54b3fc;
+      background: linear-gradient(0deg, #1085e1, #1189e7, #1085e1);
+      & p {
+        margin: 0;
+      }
+    }
+  }
+}
