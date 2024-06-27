@@ -1,3 +1,5 @@
+@import "./partials/apps.scss";
+
 body {
   margin: 0;
 }
@@ -5,6 +7,11 @@ body {
   &_desktop {
     height: calc(95vh - 3px);
     background-image: url(./images/windows-xp-bliss-bg.jpg);
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.75em;
+    padding-left: 0.25em;
+    gap: 12px;
   }
   &_menu {
     display: flex;
