@@ -1,4 +1,5 @@
 @import "./partials/apps.scss";
+@import "./partials/menu_open";
 
 html,
 body {
@@ -47,36 +48,6 @@ body {
         font-style: italic;
         font-size: 1.75em;
         color: white;
-      }
-    }
-    &_open {
-      height: 50%;
-      width: 18%;
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      position: absolute;
-      top: 44.5%;
-      left: 0px;
-      border-top: 2px solid #255fdc;
-      border-left: 2px solid #255fdc;
-      border-right: 2px solid #255fdc;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      &_user-info {
-        height: 15%;
-        background: linear-gradient(0deg, #6094d8, #255fdc, #2460dc);
-        border-top: 2px solid #3375ce;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-      }
-      &_content {
-        height: 75%;
-      }
-      &_footer {
-        height: 10%;
-        background: linear-gradient(0deg, #6094d8, #255fdc, #2460dc);
-        border-top: 2px solid #255fdc;
       }
     }
     &_time {
