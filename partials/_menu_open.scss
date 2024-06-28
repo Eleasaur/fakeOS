@@ -1,4 +1,7 @@
 .windows_menu_open {
+  &--hidden {
+    display: none;
+  }
   height: 50%;
   width: 18%;
   display: flex;
@@ -53,9 +56,6 @@
   display: flex;
   align-items: center;
   column-gap: 5px;
-  &--hidden {
-    display: none;
-  }
   &_img {
     height: 32px;
     width: 32px;

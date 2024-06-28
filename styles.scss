@@ -38,6 +38,10 @@ body {
       padding-left: 1em;
       padding-right: 2em;
       background: linear-gradient(0deg, #6bb36b, #4f9d45, #57b14d);
+      &--clicked {
+        background: linear-gradient(0deg, #508650, #33662c, #448a3c);
+        border-top: 3px solid #233b23;
+      }
       &_icon {
         margin: 0;
         height: 3.5vh;

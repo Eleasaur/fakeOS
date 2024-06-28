@@ -32,6 +32,9 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.windows_menu_open--hidden {
+  display: none;
+}
 .windows_menu_open_user-info {
   height: 14%;
   background: linear-gradient(0deg, #6094d8, #255fdc, #2460dc);
@@ -72,9 +75,6 @@
   display: flex;
   align-items: center;
   column-gap: 5px;
-}
-.menu-icon--hidden {
-  display: none;
 }
 .menu-icon_img {
   height: 32px;
@@ -129,6 +129,10 @@ body {
   padding-left: 1em;
   padding-right: 2em;
   background: linear-gradient(0deg, #6bb36b, #4f9d45, #57b14d);
+}
+.windows_menu_start--clicked {
+  background: linear-gradient(0deg, #508650, #33662c, #448a3c);
+  border-top: 3px solid #233b23;
 }
 .windows_menu_start_icon {
   margin: 0;
