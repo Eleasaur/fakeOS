@@ -38,6 +38,22 @@
   border-top: 2px solid #3375ce;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0.5em;
+  column-gap: 1em;
+}
+.windows_menu_open_user-info_img {
+  height: 80%;
+  width: auto;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+.windows_menu_open_user-info_name {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1em;
 }
 .windows_menu_open_content {
   height: 77%;
