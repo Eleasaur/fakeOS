@@ -17,6 +17,40 @@
   color: white;
 }
 
+.app-container_calculator {
+  background-color: white;
+  position: absolute;
+  top: 3em;
+  left: 3em;
+  height: 50%;
+  width: 50%;
+}
+.app-container_calculator--hidden {
+  display: none;
+}
+.app-container_toDoList {
+  background-color: white;
+  position: absolute;
+  top: 3em;
+  left: 8em;
+  height: 50%;
+  width: 50%;
+}
+.app-container_toDoList--hidden {
+  display: none;
+}
+.app-container_rps {
+  background-color: white;
+  position: absolute;
+  top: 6em;
+  left: 14em;
+  height: 50%;
+  width: 50%;
+}
+.app-container_rps--hidden {
+  display: none;
+}
+
 .windows_menu_open {
   height: 50%;
   width: 18%;

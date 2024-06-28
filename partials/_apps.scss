@@ -16,3 +16,39 @@
     color: white;
   }
 }
+
+.app-container {
+  &_calculator {
+    &--hidden {
+      display: none;
+    }
+    background-color: white;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    height: 50%;
+    width: 50%;
+  }
+  &_toDoList {
+    &--hidden {
+      display: none;
+    }
+    background-color: white;
+    position: absolute;
+    top: 3em;
+    left: 8em;
+    height: 50%;
+    width: 50%;
+  }
+  &_rps {
+    &--hidden {
+      display: none;
+    }
+    background-color: white;
+    position: absolute;
+    top: 6em;
+    left: 14em;
+    height: 50%;
+    width: 50%;
+  }
+}
