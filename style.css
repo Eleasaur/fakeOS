@@ -17,12 +17,16 @@
   color: white;
 }
 
+html,
 body {
   margin: 0;
 }
 
+.windows {
+  height: 100vh;
+}
 .windows_desktop {
-  height: calc(95vh - 3px);
+  height: calc(95vh - 15px);
   background-image: url(./images/windows-xp-bliss-bg.jpg);
   display: flex;
   flex-direction: column;
