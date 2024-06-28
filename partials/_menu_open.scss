@@ -13,18 +13,43 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   &_user-info {
-    height: 15%;
+    height: 14%;
     background: linear-gradient(0deg, #6094d8, #255fdc, #2460dc);
     border-top: 2px solid #3375ce;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
   &_content {
-    height: 75%;
+    height: 77%;
+    background-color: white;
   }
   &_footer {
-    height: 10%;
+    height: 9%;
     background: linear-gradient(0deg, #6094d8, #255fdc, #2460dc);
     border-top: 2px solid #255fdc;
+  }
+}
+
+.menu-icon {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  &--hidden {
+    display: none;
+  }
+  &_img {
+    height: 32px;
+    width: 32px;
+  }
+  &_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+  }
+  &:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
   }
 }
