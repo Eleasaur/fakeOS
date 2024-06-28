@@ -69,9 +69,35 @@ body {
   font-size: 1.75em;
   color: white;
 }
-.windows_menu_open-app {
-  height: 100%;
-  width: auto;
+.windows_menu_open {
+  height: 50%;
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 44.5%;
+  left: 0px;
+  border-top: 2px solid #255fdc;
+  border-left: 2px solid #255fdc;
+  border-right: 2px solid #255fdc;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.windows_menu_open_user-info {
+  height: 15%;
+  background: linear-gradient(0deg, #6094d8, #255fdc, #2460dc);
+  border-top: 2px solid #3375ce;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.windows_menu_open_content {
+  height: 75%;
+}
+.windows_menu_open_footer {
+  height: 10%;
+  background: linear-gradient(0deg, #6094d8, #255fdc, #2460dc);
+  border-top: 2px solid #255fdc;
 }
 .windows_menu_time {
   display: flex;
