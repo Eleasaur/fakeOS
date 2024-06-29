@@ -124,14 +124,51 @@
   position: absolute;
   top: 3em;
   left: 3em;
-  height: 50%;
-  width: 50%;
+  height: auto;
+  max-width: 500px;
+  overflow: hidden;
 }
 .app-container_calculator--hidden {
   display: none;
 }
-.app-container_calculator_content {
+.app-container_calculator_content_display {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  font-size: 1rem;
+  background-color: #28333a;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 50px;
+}
+.app-container_calculator_content_display_prevOp {
+  color: #cccccc;
+}
+.app-container_calculator_content_display_currOp {
+  color: #eeeeee;
+}
+.app-container_calculator_content_inputs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   border: 2px solid red;
+  padding: 10px;
+}
+.app-container_calculator_content_btn {
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  color: #0400d3;
+  background-color: #eeeeee;
+}
+.app-container_calculator_content_btn:hover {
+  background-color: #c9c9c9;
 }
 .app-container_toDoList {
   background-color: white;
