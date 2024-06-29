@@ -42,6 +42,8 @@ calcDesktopIcon.addEventListener("dblclick", (e) => {
 calcMenuIcon.addEventListener("click", (e) => {
   e.preventDefault;
   calcDisplay.classList.remove("app-container_calculator--hidden");
+  startMenu.classList.toggle("windows_menu_open--hidden");
+  startButton.classList.toggle("windows_menu_start--clicked");
 });
 
 toDoDesktopIcon.addEventListener("dblclick", (e) => {
@@ -52,6 +54,8 @@ toDoDesktopIcon.addEventListener("dblclick", (e) => {
 toDoMenuIcon.addEventListener("click", (e) => {
   e.preventDefault;
   toDoDisplay.classList.remove("app-container_toDoList--hidden");
+  startMenu.classList.toggle("windows_menu_open--hidden");
+  startButton.classList.toggle("windows_menu_start--clicked");
 });
 
 rpsDesktopIcon.addEventListener("dblclick", (e) => {
@@ -62,6 +66,8 @@ rpsDesktopIcon.addEventListener("dblclick", (e) => {
 rpsMenuIcon.addEventListener("click", (e) => {
   e.preventDefault;
   rpsDisplay.classList.remove("app-container_rps--hidden");
+  startMenu.classList.toggle("windows_menu_open--hidden");
+  startButton.classList.toggle("windows_menu_start--clicked");
 });
 
 //close buttons on respective apps
