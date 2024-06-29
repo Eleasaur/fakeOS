@@ -1,4 +1,8 @@
-import { dateTime, appenedElementWithText } from "./modules/functions.js";
+import {
+  dateTime,
+  appenedElementWithText,
+  Calculator,
+} from "./modules/functions.js";
 
 //time display initialise
 const initDateTime = new Date().toLocaleTimeString(navigator.language, {
@@ -92,64 +96,6 @@ closeRps.addEventListener("click", (e) => {
 });
 
 //Calculator app
-class Calculator {
-  constructor(prevOpText, currOpText) {
-    this.prevOpText = prevOpText;
-    this.currOpText = currOpText;
-    this.clear();
-  }
-
-  clear() {
-    this.currentOperand = "";
-    this.previousOperand = "";
-    this.operation = undefined;
-  }
-  appendNumber(number) {
-    if (number === "." && this.currentOperand.includes(".")) return;
-    this.currentOperand = this.currentOperand.toString() + number.toString();
-  }
-
-  chooseOperation(operation) {
-    if (this.currentOperand === "") return;
-    if (this.previousOperand !== "") {
-      this.compute();
-    }
-    this.operation = operation;
-    this.previousOperand = this.currentOperand;
-    this.currentOperand = "";
-  }
-
-  compute() {
-    let computation;
-    const prev = parseFloat(this.previousOperand);
-    const current = parseFloat(this.currentOperand);
-    if (isNaN(prev) || isNaN(current)) return;
-    switch (this.operation) {
-      case "+":
-        computation = prev + current;
-        break;
-      case "-":
-        computation = prev - current;
-        break;
-      case "*":
-        computation = prev * current;
-        break;
-      case "/":
-        computation = prev / current;
-        break;
-      default:
-        return;
-    }
-    this.currentOperand = computation;
-    this.operation = undefined;
-    this.previousOperand = "";
-  }
-
-  updateDisplay() {
-    this.currOpText.innerText = this.currentOperand;
-    this.prevOpText.innerText = this.previousOperand;
-  }
-}
 
 const numberButtons = document.querySelectorAll("[data-number]");
 const operationButtons = document.querySelectorAll("[data-operation]");
