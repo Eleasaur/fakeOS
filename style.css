@@ -46,39 +46,6 @@
   border: 1px solid white;
   border-radius: 3px;
 }
-.app-container_calculator {
-  background-color: white;
-  position: absolute;
-  top: 3em;
-  left: 3em;
-  height: 50%;
-  width: 50%;
-}
-.app-container_calculator--hidden {
-  display: none;
-}
-.app-container_toDoList {
-  background-color: white;
-  position: absolute;
-  top: 3em;
-  left: 8em;
-  height: 50%;
-  width: 50%;
-}
-.app-container_toDoList--hidden {
-  display: none;
-}
-.app-container_rps {
-  background-color: white;
-  position: absolute;
-  top: 6em;
-  left: 14em;
-  height: 50%;
-  width: 50%;
-}
-.app-container_rps--hidden {
-  display: none;
-}
 
 .windows_menu_open {
   height: 50%;
@@ -150,6 +117,57 @@
 .menu-icon:hover {
   background-color: #e6e6e6;
   cursor: pointer;
+}
+
+.app-container_calculator {
+  background-color: white;
+  position: absolute;
+  top: 3em;
+  left: 3em;
+  height: 50%;
+  width: 50%;
+}
+.app-container_calculator--hidden {
+  display: none;
+}
+.app-container_calculator_content {
+  border: 2px solid red;
+}
+.app-container_toDoList {
+  background-color: white;
+  position: absolute;
+  top: 3em;
+  left: 8em;
+  height: 50%;
+  width: 50%;
+}
+.app-container_toDoList--hidden {
+  display: none;
+}
+.app-container_toDoList_content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: scroll;
+  background-color: #ebd8c1;
+  color: #01004e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.app-container_rps {
+  background-color: white;
+  position: absolute;
+  top: 6em;
+  left: 14em;
+  height: 50%;
+  width: 50%;
+}
+.app-container_rps--hidden {
+  display: none;
+}
+.app-container_rps_content {
+  border: 2px solid red;
 }
 
 html,

@@ -1,4 +1,4 @@
-import { dateTime } from "./modules/date-time.js";
+import { dateTime, appenedElementWithText } from "./modules/functions.js";
 
 //time display initialise
 const initDateTime = new Date().toLocaleTimeString(navigator.language, {
@@ -29,6 +29,7 @@ const calcDisplay = document.querySelector(".app-container_calculator");
 const toDoDisplay = document.querySelector(".app-container_toDoList");
 const rpsDisplay = document.querySelector(".app-container_rps");
 
+//opening window functions
 calcDesktopIcon.addEventListener("dblclick", (e) => {
   e.preventDefault;
   calcDisplay.classList.remove("app-container_calculator--hidden");
@@ -49,6 +50,7 @@ const closeCalc = document.querySelector(".app-container_top-bar_close-calc");
 const closeToDo = document.querySelector(".app-container_top-bar_close-toDo");
 const closeRps = document.querySelector(".app-container_top-bar_close-rps");
 
+//closing windows functions
 closeCalc.addEventListener("click", (e) => {
   e.preventDefault;
   calcDisplay.classList.add("app-container_calculator--hidden");
@@ -63,3 +65,26 @@ closeRps.addEventListener("click", (e) => {
   e.preventDefault;
   rpsDisplay.classList.add("app-container_rps--hidden");
 });
+
+//Calculator app
+
+//To do list app
+const form = document.querySelector(".toDoListForm");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const input = document.querySelector("input");
+  const inputValue = input.value.trim();
+
+  const taskList = document.querySelector("#tasksToDo");
+  appenedElementWithText("p", inputValue, taskList);
+
+  input.value = "";
+
+  const nothingPara = document.querySelector("#nothingPara");
+  if (nothingPara) {
+    taskList.removeChild(nothingPara);
+  }
+});
+
+// rock paper scissors app

@@ -33,7 +33,9 @@
               X
             </button>
           </div>
-          <h1>Calculator</h1>
+          <div class="app-container_calculator_content">
+            <h1>Calculator</h1>
+          </div>
         </div>
         <div
           id="toDoListApp"
@@ -46,7 +48,27 @@
               X
             </button>
           </div>
-          <h1>To do list</h1>
+          <div class="app-container_toDoList_content">
+            <h1>To do list</h1>
+            <form class="toDoListForm">
+              <label for="task">Task:</label>
+              <input
+                id="task"
+                type="text"
+                placeholder="Enter Task"
+                name="task"
+                required
+              />
+              <button class="submitTaskButton">Add Task</button>
+            </form>
+            <h3>Tasks:</h3>
+            <section
+              id="tasksToDo"
+              class="app-container_toDoList_content_tasks"
+            >
+              <p id="nothingPara">Add tasks in the form above!</p>
+            </section>
+          </div>
         </div>
         <div
           id="paperScissorsRockApp"
@@ -59,7 +81,9 @@
               X
             </button>
           </div>
-          <h1>Paper Scissors Rock</h1>
+          <div class="app-container_rps_content">
+            <h1>Paper Scissors Rock</h1>
+          </div>
         </div>
       </div>
       <div class="windows_menu">
