@@ -25,6 +25,10 @@ const calcDesktopIcon = document.querySelector("#calculatorShortcut");
 const toDoDesktopIcon = document.querySelector("#toDoListShortcut");
 const rpsDesktopIcon = document.querySelector("#paperScissorsRockShortcut");
 
+const calcMenuIcon = document.querySelector("#menu-calculator");
+const toDoMenuIcon = document.querySelector("#menu-toDoList");
+const rpsMenuIcon = document.querySelector("#menu-paperScissorsRock");
+
 const calcDisplay = document.querySelector(".app-container_calculator");
 const toDoDisplay = document.querySelector(".app-container_toDoList");
 const rpsDisplay = document.querySelector(".app-container_rps");
@@ -35,12 +39,27 @@ calcDesktopIcon.addEventListener("dblclick", (e) => {
   calcDisplay.classList.remove("app-container_calculator--hidden");
 });
 
+calcMenuIcon.addEventListener("click", (e) => {
+  e.preventDefault;
+  calcDisplay.classList.remove("app-container_calculator--hidden");
+});
+
 toDoDesktopIcon.addEventListener("dblclick", (e) => {
   e.preventDefault;
   toDoDisplay.classList.remove("app-container_toDoList--hidden");
 });
 
+toDoMenuIcon.addEventListener("click", (e) => {
+  e.preventDefault;
+  toDoDisplay.classList.remove("app-container_toDoList--hidden");
+});
+
 rpsDesktopIcon.addEventListener("dblclick", (e) => {
+  e.preventDefault;
+  rpsDisplay.classList.remove("app-container_rps--hidden");
+});
+
+rpsMenuIcon.addEventListener("click", (e) => {
   e.preventDefault;
   rpsDisplay.classList.remove("app-container_rps--hidden");
 });
