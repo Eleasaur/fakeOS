@@ -157,7 +157,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  border: 2px solid red;
   padding: 10px;
 }
 .app-container_calculator_content_btn {
@@ -252,7 +251,7 @@
 
 .rps-result-selection.winner {
   opacity: 1;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 html,
