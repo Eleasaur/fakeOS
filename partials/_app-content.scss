@@ -60,7 +60,7 @@
     position: absolute;
     top: 3em;
     left: 8em;
-    height: 50%;
+    height: 80%;
     width: 50%;
     &_content {
       height: 100%;
@@ -72,6 +72,11 @@
       background-color: #ebd8c1;
       color: #01004e;
       font-family: Arial, Helvetica, sans-serif;
+      &_icon {
+        height: 64px;
+        width: auto;
+        padding-bottom: 1em;
+      }
     }
   }
   &_rps {
