@@ -91,6 +91,35 @@
     width: 70%;
     &_content {
       border: 2px solid red;
+      height: 100%;
+      &_selections {
+        display: flex;
+        justify-content: center;
+        &_btn {
+          background: none;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          font-size: 3rem;
+          transition: 75ms;
+          &:hover {
+            transform: scale(1.25);
+          }
+        }
+      }
+      &_results {
+        margin-top: 2rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        &_score {
+          margin-left: 0.4rem;
+          font-size: 1.5rem;
+          color: #000000;
+        }
+      }
     }
   }
 }
