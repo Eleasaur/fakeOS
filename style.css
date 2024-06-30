@@ -198,7 +198,6 @@
   padding-bottom: 1em;
 }
 .app-container_rps {
-  background-color: white;
   position: absolute;
   top: 3em;
   left: 14em;
@@ -209,8 +208,13 @@
   display: none;
 }
 .app-container_rps_content {
-  border: 2px solid red;
+  font-family: Arial, Helvetica, sans-serif;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  text-align: center;
+  background-color: rgb(199, 199, 199);
 }
 .app-container_rps_content_selections {
   display: flex;
@@ -229,6 +233,7 @@
 }
 .app-container_rps_content_results {
   margin-top: 2rem;
+  font-size: 2em;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
@@ -237,8 +242,17 @@
 }
 .app-container_rps_content_results_score {
   margin-left: 0.4rem;
-  font-size: 1.5rem;
+  font-size: 2em;
   color: #000000;
+}
+
+.rps-result-selection {
+  opacity: 0.7;
+}
+
+.rps-result-selection.winner {
+  opacity: 1;
+  font-size: 1.5rem;
 }
 
 html,
