@@ -1,3 +1,4 @@
+//time function
 export const dateTime = () => {
   const now = new Date();
   const currentDateTime = now.toLocaleTimeString(navigator.language, {
@@ -7,6 +8,7 @@ export const dateTime = () => {
   document.querySelector("#time").textContent = currentDateTime;
 };
 
+//append text for to do list
 export const appenedElementWithText = (elementType, text, parent) => {
   const newElement = document.createElement(elementType);
   const textNode = document.createTextNode(text);
@@ -14,6 +16,7 @@ export const appenedElementWithText = (elementType, text, parent) => {
   parent.appendChild(newElement);
 };
 
+//class for calculator
 export class Calculator {
   constructor(prevOpText, currOpText) {
     this.prevOpText = prevOpText;

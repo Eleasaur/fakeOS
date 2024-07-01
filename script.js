@@ -149,7 +149,7 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-// rock paper scissors app
+// rock paper scissors app (I could not figure out how to get this to work with importing the functions properly, would like to discuss)
 
 const selectionButtons = document.querySelectorAll("[data-selection]");
 const finalColumn = document.querySelector("[data-final-column]");
