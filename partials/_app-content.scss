@@ -1,0 +1,138 @@
+.app-container {
+  &_calculator {
+    &--hidden {
+      display: none;
+    }
+    background-color: white;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    height: auto;
+    max-width: 500px;
+    overflow: hidden;
+    &_content {
+      &_display {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
+        font-size: 1rem;
+        background-color: #28333a;
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        word-wrap: break-word;
+        word-break: break-all;
+        height: 50px;
+        &_prevOp {
+          color: #cccccc;
+        }
+        &_currOp {
+          color: #eeeeee;
+        }
+      }
+      &_inputs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 10px;
+      }
+      &_btn {
+        width: 50px;
+        height: 30px;
+        cursor: pointer;
+        color: #0400d3;
+        background-color: #eeeeee;
+        &:hover {
+          background-color: #c9c9c9;
+        }
+      }
+    }
+  }
+  &_toDoList {
+    &--hidden {
+      display: none;
+    }
+    background-color: white;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    height: 80%;
+    width: 50%;
+    &_content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      overflow-y: scroll;
+      background-color: #ebd8c1;
+      color: #01004e;
+      font-family: Arial, Helvetica, sans-serif;
+      &_icon {
+        height: 64px;
+        width: auto;
+        padding-bottom: 1em;
+      }
+    }
+  }
+  &_rps {
+    &--hidden {
+      display: none;
+    }
+    position: absolute;
+    top: 4%;
+    left: 14%;
+    height: 80%;
+    width: 70%;
+    &_content {
+      font-family: Arial, Helvetica, sans-serif;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow-y: hidden;
+      text-align: center;
+      background-color: rgb(199, 199, 199);
+      &_selections {
+        display: flex;
+        justify-content: center;
+        &_btn {
+          background: none;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          font-size: 3rem;
+          transition: 75ms;
+          &:hover {
+            transform: scale(1.25);
+          }
+        }
+      }
+      &_results {
+        margin-top: 2rem;
+        font-size: 2em;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        &_score {
+          margin-left: 0.4rem;
+          font-size: 2em;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+.rps-result-selection {
+  opacity: 0.7;
+}
+
+.rps-result-selection.winner {
+  opacity: 1;
+  font-size: 1.5em;
+}
